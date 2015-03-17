@@ -1,6 +1,6 @@
 GUI = {
 
-    styleprefix = "farl_",
+    styleprefix = "trainTaxi_",
 
     defaultStyles = {
       label = "label",
@@ -25,9 +25,9 @@ GUI = {
 
     add = function(parent, e, bind)
       local type, name = e.type, e.name
-      if not e.style and GUI.defaultStyles[type] then
-        e.style = GUI.styleprefix..type
-      end
+--      if not e.style and GUI.defaultStyles[type] then
+--        e.style = GUI.styleprefix..type
+--      end
       if bind then
         if e.type == "checkbox" then
           e.state = GUI.bindings[e.name]
