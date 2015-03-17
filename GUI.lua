@@ -58,7 +58,7 @@ GUI = {
     rename = function(event, player)
       local station = player.opened
       local name = event.element.caption
-      player.print("clicked on"..name)
+      --player.print("clicked on"..name)
       station.backername = name
     end
 }
